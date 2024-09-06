@@ -1,3 +1,5 @@
+import subprocess
+
 import streamlit as st
 import pytesseract
 from PIL import Image
@@ -59,7 +61,12 @@ def compare_texts(correct_text, student_text):
         'student_freq': student_freq
     }
 
+# Run the shell script before proceeding
+subprocess.run(["/bin/bash", "run.sh"], check=True)
+
 st.title("Answer Evaluation App")
+
+
 
 # File upload widgets
 correct_answer_image = st.file_uploader("Upload the correct answer image", type=["jpg", "png"])
