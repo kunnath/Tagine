@@ -5,6 +5,10 @@
 
 The Answer Evaluation App is a Streamlit-based application that allows users to evaluate and compare student answers against a correct answer using Optical Character Recognition (OCR) and sentence embeddings. The app extracts text from uploaded images, computes similarity scores, and provides insights into text differences and frequencies.
 
+## Purpose
+
+This application is specifically tailored for Tagore Gymnasium to assist in evaluating student answers. It helps educators assess the accuracy of student responses by comparing them against a standard correct answer, providing valuable insights into text similarity and differences.
+
 ## Features
 
 - Upload images containing the correct answer and the student's answer.
